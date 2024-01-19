@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<head>
+
+    <!-- Linking Style and Script -->
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,100;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
+
+    <!-- Style -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+
+    <!-- Title -->
+    <title>Domnic Sam J's Portfolio</title>
+
+</head>
+
+<body>
+
+    <!--
+    Home
+	Education
+	Project
+	Certifications(Within this also add the achievement mentioned on my resume)
+	Contact
+	About
+    -->
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h2 id="portfolio">
+                    My Portfolio
+                </h2>
+
+                <div class="dropdown">
+                    <button
+                      class="btn btn-primary dropdown-toggle"
+                      type="button"
+                      id="dropdownMenuButton"
+                      data-mdb-dropdown-init
+                      aria-expanded="false"
+                    >
+                      Menu
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#project">Project</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                  </div>
+                
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#project">Project</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="bg-body-tertiary text-center text-lg-start" data-mdb-theme="light">
+            <div class="card" >
+                <div class="container p-4">
+              <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0" data-mdb-theme="light">
+                    <div class="justify-content-center">
+                    <h3 style="color: blueviolet;">I'm</h3>
+                    <br>
+                    <h1>Domnic Sam J</h1>
+                    <h2 class="typewriter" style="align-items: center; justify-content: center;">Software Engineer</h2> 
+                    <button type="button" class="btn btn-danger btn-rounded btn-lg" onclick="getResume()">Download Resume</button>       
+                    </div>
+                </div>  
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0" data-mdb-theme="dark">
+                    <div class="d-flex justify-content-center">
+                        <img src="./Images/profile.png" alt="domnicsamj Image" class="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="bg-body-tertiary text-center text-lg-start" data-mdb-theme="light">
+            <div class="card" >
+                <div class="container p-4">
+                    <h2 display-4>Education</h2>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <div class="card">
+                            <div class="card-body">
+                            <h3 class="card-title">Secondary Education</h3>
+                            <ul class="list-group list-group-light">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                  SSLC ( 10th ) <br> OXFORD Matriculation Hr Sec School,<br> Tenkasi,
+                                  Tamil Nadu - 2018
+                                  <span class="badge badge-primary rounded-pill">Per : 89.80</span>
+                                </li>
+                              </ul>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                            <div class="card">
+                                <div class="card-body">
+                                <h3 class="card-title">Higher Education</h3>
+                                <h3 class="card-title">Computer Science</h3>
+                                <ul class="list-group list-group-light">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                      HSC ( 12th )<br> OXFORD Matriculation Hr Sec School,<br> Tenkasi,
+                                      Tamil Nadu - 2020
+                                      <span class="badge badge-primary rounded-pill">Per : 74.33</span>
+                                    </li>
+                                  </ul>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="col-lg-6 col-md-12 mb-4 mt-4 mb-md-0">
+                        <div class="card">
+                            <div class="card-body">
+                            <h3 class="card-title">Under graduation</h3>
+                            <ul class="list-group list-group-light">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                  BACHELOR OF ENGINEERING<br>
+                                  Computer Science and Engineering<br>
+                                  Mepco Schlenk Engineering college,<br> Sivakasi, Tamil Nadu - Apr 2024
+                                  <span class="badge badge-primary rounded-pill">CGPA : 7.71</span>
+                                </li>
+                              </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="skills">
+        <div class="bg-body-tertiary text-center text-lg-start" data-mdb-theme="light">
+            <div class="card" >
+                <div class="container p-4">
+                    <h2 display-4>Skills</h2>
+                    <ul class="list-group list-group-light">
+                        <li class="list-group-item px-3 border-0 rounded-3 list-group-item-success mb-2">C</li>
+                        <li class="list-group-item px-3 border-0 rounded-3 list-group-item-danger mb-2">C++</li>
+                        <li class="list-group-item px-3 border-0 rounded-3 list-group-item-warning mb-2">Python</li>
+                        <li class="list-group-item px-3 border-0 rounded-3 list-group-item-info mb-2">HTML & CSS</li>
+                        <li class="list-group-item px-3 border-0 rounded-3 list-group-item-danger mb-2">MySQL & MongoDB</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project">
+        <div class="bg-body-tertiary text-center text-lg-start" data-mdb-theme="light">
+            <div class="card" >
+                <div class="container p-4">
+                    <h2 display-4>Projects</h2>
+                    <div class="row">
+                        <div class="col-lg-10 col-md-12 mb-4 mt-4 mb-md-0">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="col-lg-6 col-md-12 mb-4 mb-md-0" data-mdb-theme="dark">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="./Images/door-RFID.jpg" alt="domnicsamj Image" class="img">
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-6 col-md-12 mb-4 mb-md-0" data-mdb-theme="light">
+                                    <div class="justify-content-center">
+        
+                                        <h3 display-4>RFID Based Door Accessing system</h3>
+                                        <p style="font-size:medium;">
+                                            An IoT project built using Arduino UNO to ease the customers while accessing the door.
+                                            Door can be opened and closed using RFID tag and alarm will trigger for wrong RFID tag.
+                                        </p>
+        
+                                        <button type="button" class="btn btn-danger btn-rounded">Get Code Now!</button>
+        
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="col-lg-10 col-md-12 mb-4 mt-4 mb-md-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0" data-mdb-theme="light">
+                                        <div class="justify-content-center">
+            
+                                            <h3 display-4>Online Computer Hardware management application</h3>
+                                            <p style="font-size:medium;">
+                                                A web application which allows the customer to view and purchase computer hardware parts in an easy way.
+                                                Built using MEAN stack web architecture.
+                                            </p>        
+                                            <button type="button" class="btn btn-danger btn-rounded">Get Code Now!</button>
+            
+                                        </div>
+                                    </div> 
+                                    
+                                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0" data-mdb-theme="dark">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="./Images/web development.jpg" alt="domnicsamj Image" class="img">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-10 col-md-12 mb-4 mt-4 mb-md-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0" data-mdb-theme="dark">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="./Images/airline.jpg" alt="domnicsamj Image" class="img">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0" data-mdb-theme="light">
+                                        <div class="justify-content-center">
+            
+                                            <h3 display-4>Airline Management system</h3>
+                                            <p style="font-size:medium;">
+                                                    Standalone application built in java, which allows user to book  ﬂight tickets.
+                                                    Swing components are used to construct UI and MySQL is used for Database.
+                                            </p>
+            
+                                            <div class="justify-content-center">
+                                                <button type="button" class="btn btn-danger btn-rounded">Get Code Now!</button>
+                                            </div>
+            
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <div class="bg-body-tertiary text-center text-lg-start" data-mdb-theme="light">
+            <div class="card" >
+                <div class="container p-4">
+                    <h2 display-4>Certifications</h2>
+                    <div class="row">
+                        <div class="col-lg-10 col-md-12 mb-4 mt-4 mb-md-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0" data-mdb-theme="light">
+                                        <div class="justify-content-center">
+                                                <ol class="list-group list-group-light list-group-numbered">
+                                                    <li class="list-group-item">Python - Aruvi Institute of Learning</li>
+                                                    <li class="list-group-item">Oxford Achiever for English Proficiency - Oxford</li>
+                                                    <li class="list-group-item">Software engineering and agile software development-
+                                                        Infosys springboard</li>
+                                                    <li class="list-group-item">Cloud Practitioner – AWS Academy</li>
+                                                    <li class="list-group-item">Python-Spoken Tutorial</li>
+                                                    <li class="list-group-item">Certified in Business Analyst, English Comprehension, Data Processing Specialist - AMCAT</li>
+                                                    
+                                                </ol>        
+                                        </div>
+                                    </div> 
+                                    
+                                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0" data-mdb-theme="dark">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="./Images/certifications.jpg" alt="domnicsamj Image" class="img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 display-4>Achievements</h2>
+                    <div class="row">
+                        <div class="col-lg-10 col-md-12 mb-4 mt-4 mb-md-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0" data-mdb-theme="light">
+                                        <div class="justify-content-center">
+                                            <h3 display-4>AMCAT with 'A' Grade</h3>
+                                            <p style="font-size:medium;">
+                                                Completed AMCAT 2023 with ‘A’ 
+                                                Grade in English Comprehension, Quantitative Ability (Advanced), Logical Ability.
+                                            </p>                    
+                                        </div>
+                                    </div> 
+                                    
+                                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0" data-mdb-theme="dark">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="./Images/achievements.png" alt="domnicsamj Image" class="img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">          
+            <div class="bg-body-tertiary text-center text-lg-start" data-mdb-theme="light">
+                <div class="card" >
+                    <div class="container p-4 justify-content-center">
+                        <h2 display-4>Contact</h2>
+
+                                <ul class="list-group list-group-light">
+                                    <li class="list-group-item" style="font-size:0.6em;"><i class="fas fa-location-dot fa-2x"><span class="contact-text">Tenkasi, TamilNadu</span></i></li>
+                                    <li class="list-group-item" style="font-size:0.6em;"><i class="fas fa-phone fa-2x"><span class="contact-text">+91 6382338523</span></i></li>
+                                    <li class="list-group-item" style="font-size:0.6em;"><i class="fa fa-envelope fa-2x"><span class="contact-text">domnicsamj18@gmail.com</span></i></li>
+                                </ul>
+                                
+                            <div class="text-center text-white">
+                                <div class="container p-4 pb-0">
+                                  <section class="mb-4">
+                                    <!-- Instagram -->
+                                    <a class="btn btn-floating m-1" href="https://www.instagram.com/domnic_18/" role="button">
+                                        <i class="fab fa-instagram fa-2xl"></i> 
+                                    </a>
+                                    <!-- Linkedin -->
+                                    <a class="btn btn-floating m-1" href="https://www.linkedin.com/in/domnicsamj/" role="button">
+                                        <i class="fa-brands fa-linkedin fa-2xl"></i>
+                                    </a>
+                                    <!-- Github -->
+                                    <a class="btn btn-floating m-1" href="https://github.com/domnic-18" role="button">
+                                        <i class="fa-brands fa-github fa-2xl"></i>
+                                    </a>
+                                  </section>
+                                </div>
+                            </div>
+                    
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+        
+      </section>  
+
+    <section id="about">
+        <div class="bg-body-tertiary text-center text-lg-start" data-mdb-theme="light">
+            <div class="card" >
+                <div class="container p-4">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0" data-mdb-theme="dark">
+                            <div class="d-flex justify-content-center">
+                                <img src="./Images/profile.png" alt="domnicsamj Image" class="img">
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0" data-mdb-theme="light">
+                            
+
+                                <h2 display-4>About Me</h2>
+                                <div class="d-flex justify-content-center">
+                                <p style="font-size:medium;">I am Domnic Sam J,  a dedicated individual with a strong foundation in programming languages such as C, C++, and Python. 
+                                My expertise extends to front-end development, where I am proficient in HTML, CSS, and Angular 13. 
+                                Additionally,I have hands-on experience with database management systems, including MySQL and MongoDB.
+                                </p>
+                            </div>
+                            <div class="justify-content-center">
+                                <button type="button" class="btn btn-danger btn-rounded btn-lg" onclick="getResume()">Download CV</button>
+                            </div>
+                        </div>  
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="#"><i class=""></i></a>
+                <a href="#"><i class=""></i></i></a>
+                <a href="#"><i class=""></i></a>
+            </div>
+            
+            <p class="copyright"></p>
+        </footer>
+    </div>
+
+    <footer>
+          <div class="bg-dark text-center text-white">
+            <div class="container p-4 pb-0">
+              <section class="mb-4">
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/domnic_18/" role="button">
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
+                </a>
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/domnicsamj/" role="button">
+                    <i class="fa-brands fa-linkedin fa-2xl"></i>
+                </a>
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/domnic-18" role="button">
+                    <i class="fa-brands fa-github fa-2xl"></i>
+                </a>
+              </section>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                Copyright © 2024, All Rights Reserved | Designed by Abdur Rahman
+            </div>
+          </div>
+    </footer>
+
+
+    <script src="./script.js"></script>
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js">
+    </script>
+</body>
+</html>

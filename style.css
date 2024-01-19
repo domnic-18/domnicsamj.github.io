@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+.img{
+    max-height: 320px;
+}
+
+header{
+    position:sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    z-index: 10000;
+}
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 2em;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    position: relative;
+    background-color: aliceblue;
+}
+
+
+.navbar-brand {
+    position: relative;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #343a40;
+}
+
+.navbar-links ul {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    margin: 0 10px;
+}
+
+.navbar-links a {
+    color: #343a40;
+    font-size: 1.5em;
+    text-decoration: none;
+    background-image: linear-gradient(
+      to right,
+      #54b3d6,
+      #54b3d6 50%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-links a:before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+  }
+
+.navbar-links a:hover {
+    background-position: 0;
+   }
+
+.navbar-links a:hover::before {
+    width: 100%;
+  }
+
+
+#toggle{
+    display: none;
+}
+
+#portfolio{
+    display: none;
+}
+
+
+.side-navbar{
+    background-color: black;
+    color: white;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-navbar-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-navbar-links li {
+    margin: 0 10px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-navbar-links a{
+    text-decoration: none;
+    font-size: 1.5em;
+    text-decoration: none;
+    background-image: linear-gradient(
+      to right,
+      #54b3d6,
+      #54b3d6 50%,
+      white 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+.side-navbar-links a:before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+  }
+
+.side-navbar-links a:hover {
+    background-position: 0;
+   }
+
+.side-navbar-links a:hover::before {
+    width: 100%;
+  }
+
+.dropdown{
+    display: none;
+}
+
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    z-index: 10;
+}
+
+.contact-text{
+    font-size: 20px;
+    margin-left: 0.5em;
+    text-transform: lowercase;
+    font-family: 'Poppins';
+}
+
+@media (min-width: 768px) {
+    .navbar-links {
+        display: flex; 
+    }
+    #portfolio{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    #toggle{
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    #portfolio{
+        display: flex;
+    }
+    .navbar-links {
+        display: none; 
+    }
+    .dropdown{
+        display: flex;
+    }
+
+    .img{
+        max-height: 150px;
+    }
+    .contact-text{
+        font-size: 15px;
+    }
+    .card{
+        margin: 0;
+    }
+}
+
+.typewriter{
+    font-size: 1.5em;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 4s steps(50) infinite alternate,
+        blink 700ms steps(50) infinite normal;
+    border-right: 5px solid black;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 40%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: black;
+    }
+
+    to {
+        border-color: transparent;
+    }
+}
+
+@media (max-width: 768px) {
+    @keyframes typewriter {
+        from {
+            width: 0%;
+        }
+    
+        to {
+            width: 60%;
+        }
+    }
+}
+
