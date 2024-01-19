@@ -4,7 +4,6 @@ function getResume(){
 }
 
 function getCode1(){
-    alert("alert");
     window.location.href="https://github.com/domnic-18/RFID-based-Door-Access.git";
 }
 
