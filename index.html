@@ -423,32 +423,53 @@
         </footer>
     </div>
 
-    <footer>
-          <div class="bg-dark text-center text-white">
-            <div class="container p-4 pb-0">
-              <section class="mb-4">
-                <!-- Instagram -->
+<footer>
+    <div class="bg-dark text-center text-white">
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                <!-- Social media links -->
                 <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/domnic_18/" role="button">
                     <i class="fab fa-instagram fa-2x"></i>
                 </a>
-                <!-- Linkedin -->
                 <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/domnicsamj/" role="button">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <!-- Github -->
                 <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/domnic-18" role="button">
-                    <i class="fa-brands fa-github fa-2xl"></i>
+                    <i class="fab fa-github fa-2x"></i>
                 </a>
-              </section>
-            </div>
+            </section>
+        </div>
 
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             Designed by Domnic Sam
-            </div>
-          </div>
-    </footer>
+        </div>
 
+        <!-- Viewer count -->
+        <div class="viewer-count">
+            <!-- Display the viewer count -->
+            Total Views: <span id="count">432</span>
+        </div>
+    </div>
+</footer>
+
+<!-- Script to count views -->
+<script>
+    // Function to update the viewer count
+    function updateViewerCount() {
+        // Retrieve the current count from localStorage
+        let count = localStorage.getItem('viewerCount') || 0;
+        // Increment the count
+        count++;
+        // Update the localStorage with the new count
+        localStorage.setItem('viewerCount', count);
+        // Display the count on the webpage
+        document.getElementById('count').innerText = count;
+    }
+
+    // Call the updateViewerCount function when the page loads
+    window.onload = updateViewerCount;
+</script>
 
     <script src="./script.js"></script>
     <script
